@@ -39,7 +39,7 @@ Route::prefix("/program")->group(function() {
 
 Route::get("/news", [NewsController::class, "index"])->name("news");
 Route::prefix("/news")->group(function () {
-    Route::get("/kpop/{id}", [NewsController::class, "kpop"])->name("news.detail");
-    Route::get("/gaming/{id}", [NewsController::class, "gaming"])->name("news.detail");
-    Route::get("/tech/{id}", [NewsController::class, "tech"])->name("news.detail");
+    Route::get("/kpop/{slug}", [NewsController::class, "kpop"])->name("news.detail");
+    Route::get("/gaming/{slug}", [NewsController::class, "gaming"])->name("news.detail");
+    Route::get("/tech/{slug}", [NewsController::class, "tech"])->name("news.detail");
 });
