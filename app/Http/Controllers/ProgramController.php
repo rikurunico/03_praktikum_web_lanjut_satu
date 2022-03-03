@@ -9,16 +9,16 @@ class ProgramController extends Controller
     public function program1()
     {
         return view('program1', 
-        ['title' => 'Program 1']);
+        ['title' => 'Program Detail']);
     }
     public function program2()
     {
         return view('program2', 
-        ['title' => 'Program 3']);
+        ['title' => 'Program Detail']);
     }
     public function program3()
     {
         return view('program3', 
-        ['title' => 'Program 3']);
+        ['title' => 'Program Detail']);
     }
 }
