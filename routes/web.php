@@ -18,10 +18,6 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get("/", [HomeController::class, "index"])->name("home");
 
 Route::get("/produk", [ProductController::class, "index"])->name("product");
@@ -47,8 +43,3 @@ Route::prefix("/news")->group(function () {
     Route::get("/gaming/{id}", [NewsController::class, "gaming"])->name("news.detail");
     Route::get("/tech/{id}", [NewsController::class, "tech"])->name("news.detail");
 });
-
-Route::get('/new', function () {
-    return view('template.main');
-});
-

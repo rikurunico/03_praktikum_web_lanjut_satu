@@ -1,5 +1,5 @@
 @extends('template.main')
 
 @section('container')
-<h1>Contact Us Page</h1>
+<h1>This is Contact Us Page</h1>
 @endsection
